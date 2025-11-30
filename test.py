@@ -7,7 +7,8 @@ load_dotenv()
 
 openai_api_key = os.getenv("OPENAI_API_KEY", "")
 config = Config()
-config.llm.models = [LLMModelConfig(name='gpt-4', api_key=openai_api_key)]
+config.llm.models = [LLMModelConfig(name='gpt-4', api_key=openai_api_key)] # This worked
+# config.llm.models = [LLMModelConfig(name='gpt-4.1-mini', api_key=openai_api_key)] # This worked
 
 # Evolve Python functions directly
 def bubble_sort(arr):
